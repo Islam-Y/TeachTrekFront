@@ -44,8 +44,8 @@
           <a href = '#' class="edu">edu.tatar.ru</a>
           <div class="estimation">5.0</div>
         </div>
-          <a class = '' href="tel: +78432621108">+7(843)-262-11-08</a>
-          <a href="mailto: sch144kzn@mail.ru">sch144kzn@mail.ru</a>
+          <a class = 'tel' href="tel: +78432621108">+7(843)-262-11-08</a>
+          <a class="mail-org" href="mailto: sch144kzn@mail.ru"> ch144kzn@mail.ru</a>
 
           <div class="mini-briefly">
           <p class="mini-briefly-item">Вакансии:</p><p class="mini-briefly-item-num">3</p>
@@ -58,22 +58,32 @@
           <div class="mini-briefly">
             <p class="mini-briefly-item">Сотрудники:</p><p class="mini-briefly-item-num">70</p>
           </div>
+ 
+    <ul class="ul-you-estimation">
+      <li class="you-estimation">Оценить:</li>
 
-                </div>
+      <input type="radio" id="5-star" name="crating" value="5">
+<label for="5-star" title="Amazing">5 stars</label>
+
+      <input type="radio" id="4-star" name="crating" value="4">
+<label for="4-star" title="Good">4 stars</label>
+
+      <input type="radio" id="3-star" name="crating" value="3">
+<label for="3-star" title="Average">3 stars</label>
+
+      <input type="radio" id="2-star" name="crating" value="2">
+<label for="2-star" title="Not Good">2 stars</label>
+
+      <input type="radio" id="1-star" required=""
+name="crating" value="1" aria-required="true">
+<label for="1-star" title="Bad">1 star</label>
+    </ul>
+
+    </div>
             </section>
     </div>
 
-    <div class="div-you-estimation">
-    <p class="you-estimation">Оценить:</p>
-    <ul>
-        <li><button class="star"></button></li>
-        <li><button class="star"></button></li>
-        <li><button class="star"></button></li>
-        <li><button class="star"></button></li>
-        <li><button class="star"></button></li>
-    </ul>
-</div>
-
+  
 
  <div class="inf-many">
 
@@ -85,12 +95,20 @@
 
         <section class="gallery">
             <div class="photo-org">
-                <a class="change-img"><img src="img/change-img-back.svg" width="24px" height="24px" alt="Назад"></a>
+
+              <input type="radio" name="kadoves" id="slaid2">
+              <input type="radio" name="kadoves" id="slaid3">
+                
+              <div class="kadoves">
+                <label for="slaid2"></label>
+                <label for="slaid3"></label>
+                </div>
+              
                     <img src="img/img-org-1.jpg" width="289px" height="195px" alt="Фотография организации">
                     <img src="img/img-org-2.jpg" width="289px" height="195px" alt="Фотография организации">
                     <img src="img/img-org-1.jpg" width="289px" height="195px" alt="Фотография организации">
                     <img src="img/img-org-2.jpg" width="289px" height="195px" alt="Фотография организации">
-                <a class="change-img"><img src="img/change-img-forward.svg" width="24px" height="24px" alt="Вперёд"></a>
+                
             </div>
         </section>
 

@@ -92,7 +92,7 @@ h1, h2, h3, p, ul, img{
 
 .inf-mini{
     width: 400px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(29, 168, 110);
     position: relative;
     text-align: center;
     border-radius: 15px;
@@ -176,9 +176,113 @@ padding: 5px;
     top: 760px;
 }
 
-
-
 .inf-many{
-    width: 700px;
-    background-color: rgba(255, 255, 255, 1);    
+    width: 800px;
+    background-color: rgb(129, 212, 97);    
+}
+
+.tel{
+    position: relative;
+    width: 100%;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.tel::before{
+    position: absolute;
+    top: -5px;
+    left: 75px;
+    content: url(../img/call.svg);
+}
+
+.mail-org{
+    position: relative;
+    width: 100%;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.mail-org::before{
+    position: absolute;
+    left: 70px;
+    content: url(../img/email_icon.svg);
+}
+
+.mini-briefly{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.mini-briefly-item{
+    margin-right: 10px;
+}
+
+.mini-briefly-item-num, .mini-briefly-item{
+    display: inline-block;
+}
+
+.ul-you-estimation{
+    margin: 0 auto;
+    margin-top: 40px;
+list-style: none;
+} 
+
+.ul-you-estimation {
+    float:left;
+    border-style: none;
+}
+
+.ul-you-estimation:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.ul-you-estimation:not(:checked) > label {
+    float: right;
+    width: .80em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 40px;
+    line-height: 32px;
+    color: lightgrey;
+    margin-bottom: 10px !important;
+}
+
+.ul-you-estimation:not(:checked) > label:before {
+    content: '★';
+}
+
+.ul-you-estimation > input:checked ~ label {
+    color: rgb(255, 191, 72);
+    text-shadow: none;
+}
+
+.ul-you-estimation:not(:checked) > label:hover,
+.ul-you-estimation:not(:checked) > label:hover ~ label {
+    color: rgb(255, 191, 72);
+    
+}
+
+.ul-you-estimation> input:checked + label:hover,
+.ul-you-estimation> input:checked + label:hover ~ label,
+.ul-you-estimation> input:checked ~ label:hover,
+.ul-you-estimation> input:checked ~ label:hover ~ label,
+.ul-you-estimation> label:hover ~ input:checked ~ label {
+    color: rgb(255, 191, 72);
+    text-shadow: none;
+}
+
+.ul-you-estimation> label:active {
+    position:relative;
+    top:0px;
+    left:0px; 
+}
+
+.description-hero{
+    padding: 20px 50px;
+    margin-bottom: 20px;
 }
