@@ -87,16 +87,17 @@ h1, h2, h3, p, ul, img{
     display: flex;
     align-items: flex-start;
     margin: 0 auto;
-    border: 1px solid;
+
 }
 
 .inf-mini{
     width: 400px;
-    background-color: rgb(29, 168, 110);
+    background-color: #F5F5F5; 
     position: relative;
     text-align: center;
     border-radius: 15px;
     margin-right: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .div-section-inf-mini{
@@ -178,7 +179,7 @@ padding: 5px;
 
 .inf-many{
     width: 800px;
-    background-color: rgb(129, 212, 97);    
+    background-color: #F5F5F5;
 }
 
 .tel{
@@ -285,4 +286,188 @@ list-style: none;
 .description-hero{
     padding: 20px 50px;
     margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+
+
+
+.gallery {
+    margin-bottom: 80px;
+  }
+  
+  
+  .active-photo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  .preview-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+  }
+  
+  .preview-list a {
+    position: relative;
+    display: block;
+  }
+  
+  .preview-list a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .preview-list a.active-item::before {
+    background-color: transparent;
+  }
+  
+  .preview-list li {
+    margin: 0 auto;
+    display: none;
+  }
+
+  .preview-list img{
+    display:block;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  .preview-list li:nth-child(1), .preview-list li:nth-child(2), .preview-list li:nth-child(3){
+    display: block;
+}
+
+.job-3{
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    margin-bottom: 24px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.job-3 .respond{
+    font-size: 18px;
+    line-height: 20px;
+    padding: 8px 15px;
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(45, 102, 48, 1);
+    border: none;
+}
+
+.job-3 .heart {
+    background: url(../img/heart-regular-green.svg) no-repeat 0 0;
+     cursor: pointer;
+     border: none;
+     outline: none;
+   }
+
+   .heart .likes-number {
+    margin-left: 24px;
+    line-height: 14px;
+  }
+
+  .h2-like{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .requirements-briefly{
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .main-price{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .requirements-briefly-item::before{
+    content: url(../img/vector.svg);
+    margin-right: 10px;
+  }
+
+  .briefly{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 18px;
+  }
+
+  .footer-main{
+    background-color: #0A4209;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 80px;
+}
+
+
+.footer-main-ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.nested-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.div-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.social-list-item img{
+    margin-right: 18px;
+}
+
+.nested-list .footer-social{
+    position: relative;
+}
+
+.email{
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+   margin-top: -5px;
+}
+
+@media  (max-width:1137px) {
+    .inf-mini{
+        display:none;
+    }
+
+  .inf-many{
+        width: auto !important;
+    }
+
+    .div-main-org{
+        width: auto !important;
+    }
+
+    }
+ 

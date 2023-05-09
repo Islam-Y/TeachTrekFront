@@ -22,8 +22,7 @@
     <nav class="main-nav">
     <div class="header-down">
          <a href="#">Вакансии</a>   
-         <a href="#">Организации</a> 
-         <a href="#">Рейтинг</a> 
+         <a href="#">Рейтинг организаций</a> 
          <a href="#">Контакты</a> 
     </div>
     </nav>
@@ -94,46 +93,33 @@ name="crating" value="1" aria-required="true">
         </section>
 
         <section class="gallery">
-            <div class="photo-org">
+          <div class="slider">
+            <img class="active-photo" src="img/img-org-1.jpg" alt="">
+            <ul class="preview-list">
+              <li>
+                <a href="img/img-org-1.jpg">
+                  <img src="img/img-org-1.jpg" width='220px' alt="">
+                </a>
+              </li>
+              <li>
+                <a href="img/img-org-2.jpg">
+                  <img src="img/img-org-2.jpg" width='220px' alt="">
+                </a>
+              </li>
+              <li>
+                <a href="img/img-org-1.jpg">
+                  <img src="img/img-org-1.jpg" width='220px' alt="">
+                </a>
+              </li>
+              <li>
+                <a href="img/img-org-2.jpg" class="active-item">
+                  <img src="img/img-org-2.jpg" width="170" height="150" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
 
-              <input type="radio" name="kadoves" id="slaid2">
-              <input type="radio" name="kadoves" id="slaid3">
-                
-              <div class="kadoves">
-                <label for="slaid2"></label>
-                <label for="slaid3"></label>
-                </div>
-              
-                    <img src="img/img-org-1.jpg" width="289px" height="195px" alt="Фотография организации">
-                    <img src="img/img-org-2.jpg" width="289px" height="195px" alt="Фотография организации">
-                    <img src="img/img-org-1.jpg" width="289px" height="195px" alt="Фотография организации">
-                    <img src="img/img-org-2.jpg" width="289px" height="195px" alt="Фотография организации">
-                
-            </div>
         </section>
-
-        <article class="job-3">
-
-            <div class="h2-like">
-        <h2 class="title-3">Учитель информатики</h2>
-        <button class="heart" type="button"><span class="likes-number"></span></button>
-      </div>
-      
-      <p class="main-price">от 30 000 руб.</p>
-      
-        <ul class="requirements-briefly">
-          <li class="requirements-briefly-item">Требуемый опыт: 2 года</li>
-          <li class="requirements-briefly-item">Полная занятость</li>
-        </ul>
-        <ul class="briefly">
-          <li class="briefly-item">Составление рабочей программы по информатике.</li>
-            <li class="briefly-item">Проведение уроков информатики в 5-11-х классах.</li>
-              <li class="briefly-item">Помощь в техническом обеспечении спец. уроков.</li>
-                <li class="briefly-item">едагогическое образование (высшее или среднее).</li>
-        </ul>
-        <button class= 'respond' type="button" name="button-response">Откликнуться</button>
-      
-      </article>
 
       <article class="job-3">
 
@@ -197,7 +183,7 @@ name="crating" value="1" aria-required="true">
     <ul class="nested-list">
 
         <li class="nested-list-item"><a href=#>Пользовательское</a></li>
-        <li class="nested-list-item"><a href=#>cоглашение</a></li>
+        <li class="nested-list-item"><a href=#>соглашение</a></li>
 
     </ul>
 
@@ -206,7 +192,7 @@ name="crating" value="1" aria-required="true">
 <li class="footer-main-ul-item"> 
     <ul class="nested-list">
 
-        <li class="nested-list-item footer-social"><a href=#>Контакты: </a>
+        <li class="nested-list-item"><a href=#>Контакты: </a>
             <ul class="social-list"> 
                 <li class="social-list-item">
                     <a class="telegram-a" href = "#" >
@@ -224,7 +210,7 @@ name="crating" value="1" aria-required="true">
                         <a class="VK-a" href = "#" >
                             <img src = "img/VK-footer.png" class="VK-img"  alt="ВКонтакте" width="38px" height="30px">
                         </a> 
-                    </li> 
+                    </li>
         </ul>
         <p class="email"> meejob_team@yandex.ru</p>
     </li>
@@ -234,6 +220,6 @@ name="crating" value="1" aria-required="true">
 </div>
 
   </footer>
-  
+  <script src="gallery-org.js"></script>
 </body>
 </html>
