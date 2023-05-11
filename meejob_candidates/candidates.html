@@ -31,7 +31,7 @@
   <main class="main-candidates">
     <section class="section-candidates">
    <div class="search">
-    <form class="search-job" action="" method="get">
+    <form class="search-candidate" action="" method="get">
                     
         <input name="s" placeholder="Поиск специалиста" type="search">
         <button type="submit" value=""><img src="img/magnifier.svg" alt="Поиск"></button>
@@ -51,6 +51,7 @@
    </div>
 
 <div class="div-section">
+
 <ul class="candidates">
 
 <li class="candidates-item">
@@ -61,14 +62,16 @@
 <div class="description-mini-candidate">Учитель русского языка и литературы</div>
    <div class="salary">От 30 000 руб.</div>
    
-   <p><b>Опыт работы:</b> 3 года</p>
-   <p><b>Специализация:</b> начальные средние и старшие классы</p>
-   <p><b>Образование:</b> ИФМК КФУ (2013-2017), ИПиО КФУ(2017-2019)</p>
+   <ul>
+   <li><b>Опыт работы:</b> 3 года</li>
+   <li><b>Специализация:</b> начальные средние и старшие классы</li>
+   <li><b>Образование:</b> ИФМК КФУ (2013-2017), ИПиО КФУ(2017-2019)</li>
+  </ul>
         <button class= 'button-write' type="button" name="button-response">Написать</button>
       </div>
 
         <img src="img/candidate-img.svg" alt="Cоискатель">
-        <button class="heart" type="button"><img src="img/heart-regular-green.svg"></button>
+        <button class="heart" type="button"><img class="not-heart-active" src='img/heart.png' width="30px" height="30px" alt="like"><img class="heart-active" src='img/heart_active.png' width="30px" height="30px" alt="like"></button>
 </li>
 
 
@@ -133,11 +136,6 @@
     <p class="rub">руб.</p>
   </div>
 
-  <div>
-    <input type="checkbox" id="exist" name="exist">
-    <label for="exist">Указана</label>
-  </div>
-
 </li>
 
 <li class="filter-item">
@@ -189,29 +187,46 @@
 </li>
 
 <li class="filter-item">
-  <h2 class="filter-item-p">Организация</h2>
-  <div>
-    <input type="checkbox" id="school" name="school">
-    <label for="school">школа</label>
-  </div>
+  <h2 class="filter-item-p">Образование</h2>
+  <div class="item-money">
+    <input type="education" placeholder="Высшее" id="education" name="education">
 
-  <div>
-    <input type="checkbox" id="special-school-2" name="special-school-2">
-    <label for="special-school-2">ССУЗ</label>
-  </div>
-
-  <div>
-    <input type="checkbox" id="university-2" name="university-2">
-    <label for="university-2">ВУЗ</label>
+    <input type="education" placeholder="Допобразование" id="additional-education" name="additional-education">
+   
   </div>
 
 </li>
+
+<li class="filter-item">
+  <h2 class="filter-item-p">Дополнительно</h2>
+  <div>
+    <input type="checkbox" id="ready-move" name="ready-move">
+    <label for="ready-move">готовность к переезду</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="remote-work" name="remote-work">
+    <label for="remote-work">удаленная работа</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="with-skill" name="with-skill">
+    <label for="with-skill">с опытом работы</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="not-skill" name="not-skill">
+    <label for="not-skill">без опыта</label>
+  </div>
+
+</li>
+
 
 </ul>
 </div>
 </section>
   </main>
 
-  
+  <script src="likes.js"></script>
 </body>
 </html>

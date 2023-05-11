@@ -20,6 +20,10 @@ h1, h2, h3, p, ul{
     flex-grow: 1;
 }
 
+.header-main{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} 
+
 .header-up button{
     cursor: pointer;
     border: none;
@@ -51,6 +55,14 @@ h1, h2, h3, p, ul{
     background-color: rgba(54, 88, 56, 1);
     color: rgba(255, 255, 255, 1);
     border: none;
+}
+
+.div-input-title form{
+    display: none;
+}
+
+.div-input-title form.active{
+    display: block;
 }
 
 .footer-main a, .footer-main .email{
@@ -328,8 +340,12 @@ line-height: 80px;
     position: relative;
 }
 
-.email{
+.footer-social::before{
+    content: "meejob_team@yandex.ru";
     color: rgba(255, 255, 255, 1);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+    font-size: 16px;
+top: 65px;
     position: absolute;
-    top: 94px;
 }

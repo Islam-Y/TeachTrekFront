@@ -14,6 +14,7 @@ body {
     }
 
     .button-write{
+        cursor: pointer;
         font-size: 16px;
         line-height: 20px;
         padding: 5px 10px;
@@ -24,8 +25,42 @@ body {
     }
     
    .candidates-item .heart {
+    position: absolute;
         cursor: pointer;
+        bottom: 25px;
+        left: 140px;
       }
+
+      .candidates-item .heart{
+        border: none;
+        background-color: rgba(255, 255, 255, 1);
+        opacity: 0.6;
+    }
+    
+    .candidates-item .heart img{
+        display: block;
+    }
+    
+    .candidates-item .heart.active{
+        opacity: 0.9;
+    }
+    
+    .candidates-item .heart:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+    
+    .candidates-item button:not(.active) .heart-active{
+        display: none;
+    }
+    
+    .candidates-item .heart.active .heart-active{
+        display: block;
+    }
+    
+    .candidates-item .heart.active .not-heart-active{
+        display: none;
+    }
 
     .header-up button{
         cursor: pointer;
@@ -57,7 +92,7 @@ color: rgba(84, 92, 75, 1);
     }
 
     .candidates{
-        width: auto !important;
+        width: 100%!important;
     }
     }
  
@@ -84,7 +119,7 @@ margin-bottom: 7px;
     }
 
     .header-candidates{
-        width: auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     .header-main{
@@ -119,20 +154,18 @@ margin-bottom: 7px;
         justify-content: space-between;
         flex-wrap: wrap;
         padding: 25px;
-        padding-bottom: 0;
+        padding-bottom: 10px;
         margin-bottom: 16px;
-        box-sizing: border-box;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-    .search-job{
+    .search-candidate{
         width: 64%;
         margin-bottom: 40px;
         position: relative;
     }
 
-    .search-job input{
-
+    .search-candidate input{
         background-color: #F2F2F2;
         border-radius: 10px;
         padding: 20px;
@@ -140,10 +173,9 @@ margin-bottom: 7px;
         display: inline-block;
         border: none;
         box-shadow: 0px 14px 18px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-        
     }
 
-    .search-job button{
+    .search-candidate button{
         border: none;
         border-radius: 10px;
         position: absolute;
@@ -159,6 +191,7 @@ margin-bottom: 7px;
     }
 
     .specification select{
+        cursor: pointer;
         background-color: #F2F2F2;
         border-radius: 10px;
         padding: 20px;
@@ -182,13 +215,16 @@ margin-bottom: 7px;
     }
 
     .candidates-item{
+        position: relative;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         gap: 25px;
         background-color: #FFFFFF;
         border-radius: 20px;
-        padding: 15px 30px;
+        padding: 25px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        justify-content: space-between;
     }
     
     .item-money input, .item-money .rub{
@@ -211,6 +247,24 @@ margin-bottom: 8px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
+    .filter-item input[type="education"], input[type="number"]{
+        background-color: #F2F2F2;
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+
+    .respond-filter{
+        cursor: pointer;
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 4px 9px;
+        border-radius: 30px;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(45, 102, 48, 1);
+        border: none;
+    }
+
     .candidates{
         display: flex;
         flex-wrap: wrap;
@@ -218,43 +272,19 @@ margin-bottom: 8px;
         gap: 16px;
     }
 
-    .name-candidates {
-    margin-bottom: 10px;
+    .name-candidate {
+    margin-bottom: 5px;
     max-width: 80%;
     }
 
+.description-mini-candidate{
+    margin-bottom: 10px;
+}
+
     .salary{
-        display: inline-block;
         margin-bottom: 10px;
     }
 
-    .img-description{
-        
-        display: flex;
-        gap: 20px;
-        margin-bottom: 25px;
-    }
-
-  .description-job{
-display: flex;
-flex-wrap: wrap;
-  }
-
-  .description-main{
-    width: 100%;
-  }
-
-  .city .underground{
-display: block;
-  }
-
-
-
-  .requirements{
-    margin-bottom: 20px;
-  }
-
-.city{
-    margin-right: 10px;
+.description-candidate ul li{
+    margin-bottom: 10px;
 }
-

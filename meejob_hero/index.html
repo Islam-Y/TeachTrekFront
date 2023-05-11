@@ -22,7 +22,7 @@
     <nav class="main-nav">
     <div class="header-down">
          <a href="#">Вакансии</a>   
-         <a href="#">Рейтинг организаций</a> 
+         <a href="#">Организации</a> 
          <a href="#">Контакты</a> 
     </div>
     </nav>
@@ -41,9 +41,16 @@
               
                 <div class="div-input-title">
                     
-                <form action="" method="get">
+                <form class="boss-form" action="" method="get">
                     
                     <input name="s" placeholder="Работа мечты" type="search">
+                    <button type="submit" value=""><img src="img/search.svg" alt="Поиск"></button>
+                
+                </form>
+
+                <form class="candidate-form active" action="" method="get">
+                    
+                    <input name="s" placeholder="Специалист мечты" type="search">
                     <button type="submit" value=""><img src="img/search.svg" alt="Поиск"></button>
                 
                 </form>
@@ -124,7 +131,7 @@
 <li class="footer-main-ul-item"> 
     <ul class="nested-list">
 
-        <li class="nested-list-item"><a href=#>Контакты: </a>
+        <li class="nested-list-item footer-social"><a href=#>Контакты: </a>
             <ul class="social-list"> 
                 <li class="social-list-item">
                     <a class="telegram-a" href = "#" >
@@ -144,13 +151,12 @@
                         </a> 
                     </li>
         </ul>
-        <p class="email"> meejob_team@yandex.ru</p>
     </li>
     </ul>
 </li>
 </ul>
 </div>
-
+<script src="toggle_user.js"></script>
   </footer>
 </body>
 </html>

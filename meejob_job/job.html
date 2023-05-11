@@ -22,7 +22,7 @@
     <nav class="main-nav">
     <div class="header-down">
          <a href="#">Вакансии</a>   
-         <a href="#">Рейтинг организаций</a> 
+         <a href="#">Организации</a> 
          <a href="#">Контакты</a> 
     </div>
     </nav>
@@ -36,7 +36,7 @@
 
       <div class="h2-like">
   <h1 class="title-3">Учитель информатики</h1>
-  <button class="heart" type="button"><span class="likes-number"></span></button>
+  <button class="heart" type="button"><img class="not-heart-active" src='img/heart.png' width="30px" height="30px" alt="like"><img class="heart-active" src='img/heart_active.png' width="30px" height="30px" alt="like"></button>
 </div>
 
 <p class="main-price">от 30 000 руб.</p>
@@ -105,27 +105,25 @@
           <button class="openings-button" type="button" name="button-openings">Вакансии</button>
 </section>
 
-<artical class="similar-jobs">
+<div class="similar-jobs">
 
   <h2 class="similar-jobs-h2">Похожие вакансии:</h2>
 
-  <div class="similar-jobs-item">
+  <article class="similar-jobs-item">
+    <h3 class="title-3-job">Преподаватель по программированию</h3>
+    <div class="place-job">
+    <p class="place">IT-лицей № 125</p>
+    <p class="price">от 30 000 руб.</p>
+    </div>
     
-<h3 class="title-3-job">Преподаватель по программированию</h3>
+    <ul class="requirements-similar">
+      <li class="requirements-similar-item">Требуемый опыт: 2 года</li>
+      <li class="requirements-similar-item">Полная занятость</li>
+    </ul>
+    <button class="watch-button" type="button" name="button-response">Посмотреть</button>
+  </article>
 
-<div class="place-job">
-<p class="place">IT-лицей № 125</p>
-<p class="price">от 30 000 руб.</p>
-</div>
-
-<ul class="requirements-similar">
-  <li class="requirements-similar-item">Требуемый опыт: 2 года</li>
-  <li class="requirements-similar-item">Полная занятость</li>
-</ul>
-<button class="watch-button" type="button" name="button-response">Посмотреть</button>
-  </div>
-
-  <div class="similar-jobs-item">
+  <artical class="similar-jobs-item">
     
 <h3 class="title-3-job">Преподаватель по программированию</h3>
 
@@ -140,10 +138,12 @@
 </ul>
 <button class="watch-button" type="button" name="button-response">Посмотреть</button>
 
-  </div>
+</artical>
 
   </div>
-</artical>
+
+</div>
+
 
 </div>
 </div>
@@ -222,7 +222,7 @@
                         </a> 
                     </li> 
         </ul>
-        <p class="email"> meejob_team@yandex.ru</p>
+       
     </li>
     </ul>
 </li>
@@ -230,6 +230,6 @@
 </div>
 
   </footer>
-  
+  <script src="likes.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@ min-height: 100vh;
     flex-grow: 1;
 }
 
-h1, h2, h3{
+h1, h2, h3, p, ul{
     margin: 0;
     padding: 0;
 }
@@ -54,6 +54,11 @@ h1, h2, h3{
 .title-3-job{
 font-size: 22px;
 line-height: 25px;
+}
+
+.header-3{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 30px;
 }
 
 .header-up button{
@@ -100,7 +105,7 @@ line-height: 25px;
     gap: 80px;
     padding-top: 14px;
     padding-bottom: 14px;
-    margin-bottom: 30px;
+
 }
 
 .main-div{
@@ -123,9 +128,11 @@ line-height: 25px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 15px;
     margin-bottom: 24px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .job-3 .respond{
+    cursor: pointer;
     font-size: 18px;
     line-height: 20px;
     padding: 8px 15px;
@@ -135,17 +142,36 @@ line-height: 25px;
     border: none;
 }
 
-.job-3 .heart {
-    background: url(../img/heart-regular-green.svg) no-repeat 0 0;
-     cursor: pointer;
-     border: none;
-     outline: none;
-   }
+.h2-like .heart{
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 0.6;
+}
 
-   .heart .likes-number {
-    margin-left: 24px;
-    line-height: 14px;
-  }
+.h2-like .heart img{
+    display: block;
+}
+
+.h2-like .heart.active{
+    opacity: 0.9;
+}
+
+.h2-like .heart:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.h2-like button:not(.active) .heart-active{
+    display: none;
+}
+
+.h2-like .heart.active .heart-active{
+    display: block;
+}
+
+.h2-like .heart.active .not-heart-active{
+    display: none;
+}
 
   .h2-like{
     display: flex;
@@ -183,6 +209,7 @@ line-height: 25px;
     padding: 30px 40px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .job-description-3 p{
@@ -220,9 +247,11 @@ justify-content: center;
 background-color: rgba(255, 255, 255, 1);
 border-radius: 15px;
 gap: 20px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .job-img-3 .openings-button{
+    cursor: pointer;
         font-size: 18px;
         line-height: 20px;
         padding: 8px 15px;
@@ -291,6 +320,11 @@ padding: 5px;
     margin-bottom: 20px;
 }
 
+.similar-jobs-item{
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .similar-jobs-h2{
     text-align: center;
     margin-bottom: 20px;
@@ -307,11 +341,6 @@ padding: 5px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-}
-
-.similar-jobs p{
-    margin: 0;
-    padding: 0;
 }
 
 .title-3-job{
@@ -331,6 +360,7 @@ padding: 5px;
   }
 
   .similar-jobs-item .watch-button{
+    cursor: pointer;
     font-size: 15px;
     line-height: 20px;
     padding: 8px 15px;
@@ -404,8 +434,28 @@ padding: 5px;
     position: relative;
 }
 
-.email{
+.footer-social::before{
+    content: "meejob_team@yandex.ru";
     color: rgba(255, 255, 255, 1);
-    position: absolute;
-    top: 45px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+    font-size: 16px;
+top: 65px;
+    position: absolute
 }
+
+@media  (max-width:1137px) {
+    .job-img-3-similar-jobs{
+        display:none;
+    }
+
+  .job-3-job-description-3{
+        width: 100% !important;
+    }
+
+    .div-main-org{
+        width: auto !important;
+    }
+
+    }
+ 
