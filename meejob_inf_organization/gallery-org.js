@@ -6,50 +6,36 @@ for (let preview of previews){
     preview.onclick = function(evt){
         evt.preventDefault();
         activePhoto.src = preview.href;
-
-        let activeItem = document.querySelector('.preview-list .active-item');
-        activeItem.classList.remove('active-item')
-        preview.classList.add('active-item');
     };
 };
 
-//Функционал с возможностью листать фотографии
-const gallery = document.getElementById("gallery");
-const slidesContainer = document.getElementById("slides-container");
-const prevButton = document.getElementById("prev-button");
-const nextButton = document.getElementById("next-button");
+//Функционал с возможностью показать все фотографии
+let more = document.querySelector('.more');
+let moreHidden = document.querySelector('.more-hidden');
+let photosLi = document.querySelectorAll('.preview-list li');
 
-const images = slidesContainer.querySelectorAll("img");
-const groupSize = 3;
-
-let currentSlideIndex = 0;
-
-// функция для изменения видимости фотографий
-function updateSlideVisibility() {
-  images.forEach((image, index) => {
-    if (index >= currentSlideIndex * groupSize && index < (currentSlideIndex + 1) * groupSize) {
-      image.classList.add("active");
-    } else {
-      image.classList.remove("active");
-    }
-  });
+more.onclick = function(){
+for (let photoLi of photosLi){
+    more.classList.remove('active-more')
+    moreHidden.classList.add('active-more')
+    photoLi.classList.add('active-li')
+  }
 }
 
-// инициализация видимости фотографий
-updateSlideVisibility();
+  moreHidden.onclick = function(){
+    for (let photoLi of photosLi){
+    moreHidden.classList.remove('active-more')
+    more.classList.add('active-more')
+    photoLi.classList.remove('active-li')
 
-prevButton.addEventListener("click", () => {
-  if (currentSlideIndex > 0) {
-    currentSlideIndex--;
-    updateSlideVisibility();
-    slidesContainer.style.transform = `translateX(${-currentSlideIndex * 33.33}%)`;
+  
   }
-});
+  if (photosLi.length > 3) {
+    photosLi[0].classList.add('active-li');
+    photosLi[1].classList.add('active-li');
+    photosLi[2].classList.add('active-li');
+  }
+  
+}
 
-nextButton.addEventListener("click", () => {
-  if (currentSlideIndex < Math.ceil(images.length / groupSize) - 1) {
-    currentSlideIndex++;
-    updateSlideVisibility();
-    slidesContainer.style.transform = `translateX(${-currentSlideIndex * 33.33}%)`;
-  }
-});
+

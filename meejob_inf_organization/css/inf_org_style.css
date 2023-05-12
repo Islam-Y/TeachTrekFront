@@ -301,7 +301,6 @@ list-style: none;
     margin-bottom: 80px;
   }
   
-  
   .active-photo {
     width: 100%;
     height: auto;
@@ -311,43 +310,27 @@ list-style: none;
   
   .preview-list {
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-between;
     list-style: none;
     margin-bottom: 28px;
-    width: calc(100% * 3);
-    transition: transform 0.5s ease;
-  }
-  
-  .preview-list a {
-    position: relative;
-    display: block;
-  }
-  
-  .preview-list a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  
-  .preview-list a.active-item::before {
-    background-color: transparent;
+    
   }
   
   .preview-list li {
-  height: auto;
-    flex: 0 0 calc(100% / 3);
+    width: 30%;
     display: none;
+  height: auto;
   }
 
-  .preview-list li.toggle{
-    display: block;
+  .preview-list li.active-li{
+display: block;
   }
 
   .preview-list img{
+    width: 100%;
+    height: auto;
     display:block;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
@@ -358,7 +341,8 @@ list-style: none;
     justify-content: center;
 }
 
-.gallery-button button {
+.gallery-button button{
+    display: none;
     cursor: pointer;
     border: none;
     background-color: #F5F5F5;
@@ -368,6 +352,12 @@ list-style: none;
  .gallery-button button:hover{
     opacity: 1;
  }
+
+ .gallery-button button.active-more{
+    display: block;
+ }
+
+
 
 .job-3{
     padding: 25px;
