@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="css/my_resume_list.css" rel="stylesheet">
+    <link href="css/my_resume_list_empty.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -25,9 +25,9 @@
              <a href="#">Контакты</a> 
         </div>
         </nav>
-    </header>
+      </header>
 
-    <main class="main-div">
+      <main class="main-div">
         <section class="user-main-info">
             <img class="user-main-info-avatar" src="img/user_profile_pic.jpg" alt="Фотография пользователя" width="227px" height="200px">
             <p class="user-main-info-fio"><strong>Иванов Иван Иванович</strong></p>
@@ -39,7 +39,7 @@
             <div class="user-account-settings-edit">
                 <p class="user-account-settings-title">Настройки аккаунта</p>
                 <a href="#">
-                    <img src="img/edit_button.svg" width="25px" height="27px">
+                    <img class="user-account-settings-edit-button" src="img/edit_button.svg" width="25px" height="27px">
                 </a>
             </div>
             <hr style="border: 1px solid rgba(0, 0, 0, 0.16); width: 628px; margin-top: 0px; margin-bottom: 0px;">
@@ -70,36 +70,14 @@
             <a class="user-account-settings-delete-account" href="#">Удаление аккаунта</a>
         </section>
 
-        <section class="user-resume">
-            <div class="user-resume-add">
-                <p class="user-resume-title">Мои резюме</p>
-                <a href="#">
-                    <img src="img/add_resume_gray_plus.svg" width="23px" height="23px">
-                </a>
-            </div>
+        <section class="user-resume-empty">
+            <p class="user-resume-empty-title">Мои резюме</p>
             <hr style="border: 1px solid rgba(0, 0, 0, 0.16); width: 996px; margin-top: 0px; margin-bottom: 0px;">
-
-            <ul class="resume-card-list">
-                <li class="resume-card">
-                    <a href="#">
-                        <img src="img/edit_button.svg" width="25px" height="27px">
-                    </a>
-                    <ul class="resume-card-info-list">
-                        <li class="list-setting">
-                            <p>Желаемая должность</p>
-                            <input type="text" readonly>
-                        </li>
-                        <li class="list-setting">
-                            <p>Ожидаемое вознаграждение</p>
-                            <div class="expected-reward">
-                                <input type="text" placeholder="Не указано" readonly>
-                                <p>руб.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-
+            <div class="user-resume-empty-new-resume">
+                <img src="img/add_resume_plus.svg" width="21" height="18">
+                <a href="#">Создать резюме</a>
+            </div>
+            
         </section>
       </main>
 

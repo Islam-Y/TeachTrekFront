@@ -255,7 +255,7 @@ body {
     padding-left: 5px;
 }
 
-.user-resume {
+.user-resume-empty {
     grid-area: resume;
     font-family: 'Work Sans', 'sans-serif';
     display: flex;
@@ -270,11 +270,11 @@ body {
     padding: 0px;
     padding-left: 27px;
     padding-right: 17px;
-    padding-bottom: 397px;
-    margin-bottom: 40px;
+    padding-bottom: 160px;
+    margin-bottom: 986px;
 }
 
-.user-resume-title {
+.user-resume-empty-title {
     font-weight: 700;
     font-size: 23px;
     line-height: 27px;
@@ -283,82 +283,22 @@ body {
     padding-left: 13px;
 }
 
-.user-resume-add {
+.user-resume-empty-new-resume {
     display: flex;
 }
 
-.user-resume-add a {
-    margin-top: 19px;
-    margin-bottom: 5px;
+.user-resume-empty-new-resume img {
+    margin-top: 32px;
+    margin-right: 5px;
+    padding-left: 13px;
 }
 
-.user-resume-add img {
-    margin-left: 834px;
-}
-
-.resume-card-list {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    margin-left: 13px;
-    
-}
-
-.resume-card {
+.user-resume-empty-new-resume a {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #76B8F5;
     margin-top: 27px;
-    display: flex;
-    flex-direction: column;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.37);
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 960px;
-    height: 281px;
-}
-
-.resume-card a {
-    align-self: flex-end;
-}
-
-.resume-card img {
-    margin-top: 14px;
-    margin-right: 20px;
-}
-
-.list-setting {
-    list-style-type: none;
-    margin-top: 16px;
-}
-
-.list-setting p {
-    margin: 0px;
-}
-
-.list-setting input {
-    background: #F2F2F2;
-    padding: 0px;
-    margin-top: 6px;
-    border: 0px;
-    width: 559px;
-    height: 28px;
-}
-
-.expected-reward {
-    display: flex;
-}
-
-.expected-reward input {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    width: 228px;
-    color: #959595;
-    padding-left: 10px;
-}
-
-.expected-reward p {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    color: #626161;
-    padding: 5px;
+    margin-bottom: 30px;
 }
