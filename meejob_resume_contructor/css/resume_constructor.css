@@ -1,0 +1,390 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    background-color: #F5F5F5;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-3 {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 30px;
+}
+
+.header-up {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 124px;
+    padding-left: 131px;
+    background-color: #0A4209;
+}
+
+.header-up button {
+    cursor: pointer;
+    border: none;
+    background-color: #0A4209;
+}
+
+.header-down {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.header-down a {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #545C4B;
+    text-decoration: none;
+    font-weight: 500; 
+}
+
+.footer-main {
+    background-color: #0A4209;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: auto;
+}
+
+.footer-main a, .footer-main .email {
+    font-family: "Work Sans", sans-serif;
+    text-decoration: none;
+    color: #E2F1D3;
+    font-size: 19px;
+    line-height: 30px;
+}
+
+.div-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-main-ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.nested-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nested-list .footer-social {
+    position: relative;
+}
+
+.footer-social::before {
+    content: "meejob_team@yandex.ru";
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+    font-size: 16px;
+    top: 65px;
+    position: absolute
+}
+
+.social-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.social-list-item img{
+    margin-right: 18px;
+}
+
+.main-div {
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 356px 674px;
+    grid-template-areas: "main settings"
+                         "personal personal";
+    gap: 15px;
+    justify-content: center;
+}
+
+.user-main-info {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 356px;
+}
+
+.user-main-info-avatar {
+    padding-top: 28px;
+}
+
+.user-main-info-fio {
+    padding-top: 23px;
+    margin: 0px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    word-break: break-all;
+}
+
+.user-main-info-email {
+    padding-top: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4F88CC;
+    text-decoration: none;
+}
+
+.user-main-info-responses {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #19741E;
+    border: 1px solid #2D6630;
+    border-radius: 0px;
+    width: 168px;
+    height: 41px;
+    margin-top: 30px;
+}
+
+.user-account-settings {
+    font-family: 'Work Sans', 'sans-serif';
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    grid-area: settings;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    padding-left: 32px;
+    padding-right: 17px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #545C4B;
+}
+
+.user-account-settings-edit {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.user-account-settings-title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 27px;
+    margin-top: 19px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.user-account-settings-edit a {
+    margin-top: 19px;
+    margin-bottom: 5px;
+}
+
+.user-account-settings-edit img {
+    margin-left: 377px;
+}
+
+.user-account-settings-list {
+    margin: 0px;
+    padding-left: 5px;
+}
+
+.list-setting {
+    list-style-type: none;
+    margin-top: 24px;
+}
+
+.list-setting p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 0px;
+}
+
+.list-setting input {
+    background: #F2F2F2;
+    padding: 0px;
+    margin-top: 6px;
+    border: 0px;
+    width: 384px;
+    height: 28px;
+}
+
+.list-setting-radio-buttons {
+    list-style-type: none;
+}
+
+.list-setting-radio-buttons p {
+    margin-top: 24px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.user-account-settings-delete-account {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #76B8F5;
+    margin-top: 27px;
+    margin-bottom: 30px;
+    padding-left: 5px;
+}
+
+.user-personal-info {
+    grid-area: personal;
+    font-family: 'Work Sans', 'sans-serif';
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #545C4B;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 27px;
+    padding-right: 17px;
+    margin-bottom: 27px;
+}
+
+.user-personal-info-title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 27px;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    padding-left: 13px;
+}
+
+.personal-info-first-list {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 13px;
+}
+
+.element-personal {
+    list-style-type: none;
+    margin-top: 16px;
+}
+
+.element-personal p {
+    margin: 0px;
+}
+
+.element-personal input {
+    background: #F2F2F2;
+    padding: 0px;
+    margin-top: 6px;
+    border: 0px;
+    width: 559px;
+    height: 28px;
+}
+
+.expected-reward {
+    display: flex;
+}
+
+.expected-reward input {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    width: 228px;
+    color: #959595;
+    padding-left: 10px;
+}
+
+.expected-reward p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #626161;
+    padding: 5px;
+}
+
+.element-personal textarea {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #626161;
+    background: #F2F2F2;
+    border: 0px;
+    height: 62px;
+    width: 559px;
+}
+
+.personal-info-second-list {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 13px;
+}
+
+.personal-info-third-list {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 13px;
+}
+
+.personal-info-fourth-list {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 13px;
+}
+
+.personal-info-fourth-list p {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.user-personal-info-link {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #76B8F5;
+    margin-top: 27px;
+    margin-bottom: 30px;
+}
+
+.user-personal-info-save {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #19741E;
+    border: 1px solid #2D6630;
+    border-radius: 0px;
+    width: 195px;
+    height: 50px;
+    margin-top: 53px;
+    margin-bottom: 37px;
+}

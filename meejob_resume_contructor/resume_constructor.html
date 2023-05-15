@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="css/resume_constructor.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-3">
+        <div class="header-up">
+           <a class="logo" href = "#" >
+            <img src = "#" class="logo-img"  alt="Logo Meejob">
+            </a> 
+            <button type="button" name="enter-button" value="Войти"><img src="img/profile.svg"></button>
+        </div>
+    
+        <nav class="main-nav">
+        <div class="header-down">
+             <a href="#">Вакансии</a>   
+             <a href="#">Организации</a> 
+             <a href="#">Контакты</a> 
+        </div>
+        </nav>
+      </header>
+
+      <main class="main-div">
+        <section class="user-main-info">
+            <img class="user-main-info-avatar" src="img/user_profile_pic.jpg" alt="Фотография пользователя" width="227px" height="200px">
+            <p class="user-main-info-fio"><strong>Иванов Иван Иванович</strong></p>
+            <a class="user-main-info-email" href="mailto: Ivanov95@mail.ru">Ivanov95@mail.ru</a>
+            <button class="user-main-info-responses">Отклики</button>
+        </section>
+
+        <section class="user-account-settings">
+            <div class="user-account-settings-edit">
+                <p class="user-account-settings-title">Настройки аккаунта</p>
+                <a href="#">
+                    <img class="user-account-settings-edit-button" src="img/edit_button.svg" width="25px" height="27px">
+                </a>
+            </div>
+            <hr style="border: 1px solid rgba(0, 0, 0, 0.16); width: 628px; margin-top: 0px; margin-bottom: 0px;">
+            <ul class="user-account-settings-list">
+                <li class="list-setting">
+                    <p>Имя пользователя</p>
+                    <input type="text">
+                </li>
+                <li class="list-setting">
+                    <p>Мобильный телефон</p>
+                    <input type="text">
+                </li>
+                <li class="list-setting">
+                    <p>Адрес электронной почты</p>
+                    <input type="email">
+                </li>
+                <li class="list-setting">
+                    <p>Пароль</p>
+                    <input type="password">
+                </li>
+                <li class="list-setting-radio-buttons">
+                    <p>Пол<br>
+                        <input type="radio" name="sex" value="male" style="margin: 7px 8px 13px 0px; font-weight: 500;">Мужской<br>
+                        <input type="radio" name="sex" value="female" style="margin: 0px 8px 0px 0px; font-weight: 500;">Женский<br>
+                    </p>
+                </li>
+            </ul>
+            <a class="user-account-settings-delete-account" href="#">Удаление аккаунта</a>
+        </section>
+
+        <section class="user-personal-info">
+            <p class="user-personal-info-title">Личная информация</p>
+            <hr style="border: 1px solid rgba(0, 0, 0, 0.16); width: 996px; margin-top: 0px; margin-bottom: 0px;">
+            <ul class="personal-info-first-list">
+                <li class="element-personal">
+                    <p>Имя</p>
+                    <input type="text">
+                </li>
+                <li class="element-personal">
+                    <p>Фамилия</p>
+                    <input type="text">
+                </li>
+                <li class="element-personal">
+                    <p>Отчество</p>
+                    <input type="text">
+                </li>
+                <li class="element-personal">
+                    <p>Мобильный телефон</p>
+                    <input type="text">
+                </li>
+                <li class="element-personal">
+                    <p>Адрес электронной почты</p>
+                    <input type="text">
+                </li>
+                <li class="element-personal">
+                    <p>Желаемая должность</p>
+                    <input type="text">
+                </li>
+                <li class="element-personal">
+                    <p>Ожидаемое вознаграждение</p>
+                    <div class="expected-reward">
+                        <input type="text" placeholder="От">
+                        <p>руб.</p>
+                    </div>
+                </li>
+                <li class="element-personal">
+                    <p>Обо мне</p>
+                    <textarea class="about-me" placeholder="Опишите свои достоинства и ключевые навыки"></textarea>
+                </li>
+            </ul>
+            <p class="user-personal-info-title" style="margin-top: 49px;">Опыт работы</p>
+            <hr style="border: 1px solid rgba(0, 0, 0, 0.16); width: 996px; margin-top: 0px; margin-bottom: 0px;">
+            <ul class="personal-info-second-list">
+                <li class="element-personal">
+                    <p>Название компании</p>
+                    <input type="text">
+                </li>
+                <li class="element-personal">
+                    <p>Ваша должность в компании</p>
+                    <input type="text">
+                </li>
+                <li class="element-personal">
+                    <p>Местоположение компании</p>
+                    <input type="text">
+                </li>
+                <li class="element-personal">
+                    <p>Начало работы</p>
+                    <input type="text">
+                </li>
+                <li class="element-personal">
+                    <p>Окончание работы</p>
+                    <input type="text">
+                </li>
+                <li class="element-personal">
+                    <a class="user-personal-info-link" href="#">Добавить</a>
+                </li>
+            </ul>
+            <p class="user-personal-info-title" style="margin-top: 49px;">Образование</p>
+            <hr style="border: 1px solid rgba(0, 0, 0, 0.16); width: 996px; margin-top: 0px; margin-bottom: 0px;">
+            <ul class="personal-info-third-list">
+                <li class="element-personal">
+                    <p>Название учебного заведения</p>
+                    <input type="text">
+                </li>
+                <li class="element-personal">
+                    <p>Местоположение учебного заведения</p>
+                    <input type="text">
+                </li>
+                <li class="element-personal">
+                    <p>Факультет или институт</p>
+                    <input type="text">
+                </li>
+                <li class="element-personal">
+                    <p>Год выпуска</p>
+                    <input type="text">
+                </li>
+                <li class="element-personal">
+                    <a class="user-personal-info-link" href="#">Добавить</a>
+                </li>
+            </ul>
+            <p class="user-personal-info-title" style="margin-top: 49px;">Достижения</p>
+            <hr style="border: 1px solid rgba(0, 0, 0, 0.16); width: 996px; margin-top: 0px; margin-bottom: 0px;">
+            <div class="personal-info-fourth-list">
+                <p>Здесь Вы можете прикрепить свои рекомендательные письма, проекты и иные достижения:</p>
+                <a class="user-personal-info-link" href="#">Добавить</a>
+            </div>
+            <button class="user-personal-info-save">Сохранить</button>
+        </section>
+      </main>
+
+      <footer class="footer-main">
+        <div class="div-footer">
+            <ul class="footer-main-ul">
+                <li class="footer-main-ul-item"> 
+                    <ul class="nested-list">
+                        <li class="nested-list-item"><a href=#>О нас</a></li>
+                        <li class="nested-list-item"><a href=#>Рейтинг</a></li>
+                    </ul>
+                </li>
+                <li class="footer-main-ul-item"> 
+                    <ul class="nested-list">
+                        <li class="nested-list-item"><a href=#>Вакансии</a></li>
+                        <li class="nested-list-item"><a href=#>Организации</a></li>
+                    </ul>
+                </li>
+                <li class="footer-main-ul-item"> 
+                    <ul class="nested-list">
+                        <li class="nested-list-item"><a href=#>Пользовательское</a></li>
+                        <li class="nested-list-item"><a href=#>cоглашение</a></li>
+                    </ul>
+                </li>
+                <li class="footer-main-ul-item"> 
+                    <ul class="nested-list">
+                        <li class="nested-list-item footer-social"><a href=#>Контакты: </a>
+                            <ul class="social-list"> 
+                                <li class="social-list-item">
+                                    <a class="telegram-a" href = "#">
+                                        <img src = "img/telegram_logo.svg" class="telegram-img"  alt="Telegram" width="30px" height="30px">
+                                    </a> 
+                                </li>
+                                <li class="social-list-item">
+                                    <a class="whatsapp-a" href = "#">
+                                        <img src = "img/whats-app_logo.svg" class="whatsapp-img"  alt="WhatsApp" width="30px" height="30px">
+                                    </a> 
+                                </li>
+                                <li class="social-list-item">
+                                    <a class="VK-a" href = "#" >
+                                        <img src = "img/VK-footer.png" class="VK-img"  alt="ВКонтакте" width="38px" height="30px">
+                                    </a> 
+                                </li> 
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
