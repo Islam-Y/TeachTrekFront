@@ -127,6 +127,8 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 356px;
 }
 
@@ -152,6 +154,7 @@ body {
 }
 
 .user-main-info-responses {
+    cursor: pointer;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -159,7 +162,7 @@ body {
     color: #FFFFFF;
     background: #19741E;
     border: 1px solid #2D6630;
-    border-radius: 0px;
+    border-radius: 20px;
     width: 168px;
     height: 41px;
     margin-top: 30px;
@@ -172,6 +175,8 @@ body {
     align-items: start;
     grid-area: settings;
     background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 0px;
     padding: 0px;
     padding-left: 32px;
@@ -262,6 +267,8 @@ body {
     flex-direction: column;
     align-items: start;
     background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
@@ -310,7 +317,8 @@ body {
     flex-direction: column;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.37);
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 960px;
     height: 281px;
 }
