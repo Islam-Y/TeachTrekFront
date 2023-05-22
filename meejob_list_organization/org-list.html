@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+<link href="css/org-list_style.css" rel="stylesheet">
+  <title>Лента организаций TeachTrek</title>
+</head>
+<body>
+  <header class="header-organization">
+    <div class="header-up">
+       <a class="logo" href = "#" >
+        <img src = "#" class="logo-img"  alt="Logo Meejob">
+        </a> 
+        <button type="button" name="enter-button" value="Войти"><img src="img/profile.svg"></button>
+    </div>
+
+    <nav class="main-nav">
+    <div class="header-down">
+         <a href="#">Вакансии</a>   
+         <a href="#">Организации</a> 
+         <a href="#">Контакты</a> 
+    </div>
+    </nav>
+  </header>
+
+  <main class="main-organizations">
+    <section class="section-organizations">
+   <div class="search">
+    <form class="search-organization" action="" method="get">
+                    
+        <input name="s" placeholder="Поиск специалиста" type="search">
+        <button type="submit" value=""><img src="img/magnifier.svg" alt="Поиск"></button>
+    
+    </form>
+
+<div class="div-section">
+
+<ul class="organization">
+
+<li class="organization-item">
+  <div class="description-organization">
+   <h2 class="name-organization" >МБОУ Средняя общеобразовательная школа №144</h2>
+   <img src="img/img-school.png" alt="Организация" width="150px" height="150px">
+   <div class="estimation">5.0</div>
+   <div class="city-underground"><div class="city">Казань</div> <div class="underground">Проспект Победы</div></div>
+<p class="descript">Средняя общеобразовательная школа предоставляет образовательные и воспитательные услуги с 1 по 11 классы.</p> 
+        <button class= 'button-write' type="button" name="button-response">Смотреть вакансии</button>
+      </div>
+
+      
+</li>
+
+</ul> 
+
+<ul class="filter">
+
+<li class="filter-item">
+  <h2 class="filter-item-p">Местоположение</h2>
+  <div>
+    <input type="checkbox" id="kazan" name="kazan">
+    <label for="kazan">Казань</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="zelenodolsk" name="zelenodolsk">
+    <label for="zelenodolsk">Зеленодольск</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="chistopol" name="chistopol">
+    <label for="chistopol">Чистополь</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="naberezhnye-chelny" name="naberezhnye-chelny">
+    <label for="naberezhnye-chelny">Набережные Челны</label>
+  </div>
+
+  <button class= 'respond-filter' class="filter-all">Показать все</button>
+</li>
+
+<li class="filter-item">
+  <h2 class="filter-item-p">Организация</h2>
+
+  <div>
+    <input type="checkbox" id="school" name="school">
+    <label for="school">Школа</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="special-school" name="special-school">
+    <label for="special-school">ССУЗ</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="university" name="university">
+    <label for="university">ВУЗ</label>
+  </div>
+
+</li>
+</ul>
+</div>
+</section>
+  </main>
+
+  <script src="likes.js"></script>
+</body>
+</html>
