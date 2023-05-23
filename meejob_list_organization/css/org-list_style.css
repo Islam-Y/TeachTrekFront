@@ -141,7 +141,7 @@ margin-bottom: 7px;
     .div-section{
         display: flex;
        justify-content: center;
-        gap: 20px;
+       gap: 20px;
         align-items: flex-start; 
     } 
 
@@ -160,10 +160,10 @@ margin-bottom: 7px;
 
     .organization-item{
         position: relative;
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-wrap: wrap;
-         justify-content: space-between;
+        justify-content: center;
         gap: 25px;
         background-color: #FFFFFF;
         border-radius: 20px;
@@ -181,11 +181,11 @@ margin-bottom: 7px;
         border: none;
         display: line-block;
     position: relative;
-    top: -19%;
+    top: -5%;
     }
 
     .name-organization {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     max-width: 80%;
     }
 
@@ -194,14 +194,14 @@ margin-bottom: 7px;
     font-size: 18px;
     display: line-block;
     position: relative;
-    top: -19%;
+    top: -12%;
 }
 
 .estimation{
     display: line-block;
     position: relative;
     padding: 5px;
-    top: -36%;
+    top: -34%;
     left: 22%;
 }
 
@@ -216,7 +216,7 @@ margin-bottom: 7px;
     width: 100%;
     margin-bottom:20px;
     position: relative;
-    top:-30%;
+    top:-25%;
     left:21%;
 }
 
@@ -247,7 +247,7 @@ display: inline-block;
          background-color: #FFFFFF;
         border-radius: 20px;    
         width: 300px;   
-        padding: 0 25px;
+        padding: 5px 25px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
